@@ -1,0 +1,109 @@
+.plan-comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.main-form-container {
+  width: 80%; /* Adjusted from 100% to 80% to take the correct proportion of its container */
+  max-width: none; /* If previously set, remove or adjust this to not limit the container width */
+  display: flex;
+  flex-direction: column;
+  margin: auto; /* Centers the container within its parent */
+}
+
+.form-element {
+  flex: 1; /* Ensures equal width among elements */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 10px; /* Adjust margin for spacing between elements */
+  min-width: 0; /* Helps handle overflow issues */
+  word-wrap: break-word; /* Allows text to wrap and prevents overflow */
+  text-align: center;
+  padding: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: stretch; /* Aligns children of form-row vertically */
+}
+
+.top-row,
+.bottom-row {
+  display: contents;
+}
+
+.time-inputs {
+  display: flex;
+  gap: 5px;
+}
+
+input[type="text"] {
+  border-radius: 5px; /* Rounded corners */
+  padding: 3px 6px; /* Consistent padding with select elements */
+  border: 1px solid #ccc;
+  outline: none;
+  width: auto; /* Allows the input to not necessarily fill the container */
+}
+
+.input-with-label {
+  display: flex;
+  align-items: center; /* Centers label and input vertically */
+  margin-bottom: 5px; /* Space between each input-with-label group */
+}
+
+.search-form,
+.common-free-hours,
+.your-weekly-schedule,
+.other-person-weekly-schedule {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 5px; /* dodajemy przerwę między wierszami */
+}
+
+.plan-main-container {
+  width: 90%;
+  margin: auto;
+}
+
+table tr {
+  background-color: #fafffc; /* szare tło */
+}
+
+table tr td:first-child {
+  border-top-left-radius: 10px; /* zaokrąglone lewe górne krawędzie */
+  border-bottom-left-radius: 10px; /* zaokrąglone lewe dolne krawędzie */
+}
+
+table tr td:last-child {
+  border-top-right-radius: 10px; /* zaokrąglone prawe górne krawędzie */
+  border-bottom-right-radius: 10px; /* zaokrąglone prawe dolne krawędzie */
+}
+
+table tr td {
+  border: 1px solid #707070; /* ciemnoszare obramowanie */
+  padding: 5px;
+  text-align: center; /* wyśrodkowany tekst */
+}
+
+/* inne tło dla dni tygodnia*/
+table tr.day-row {
+  background-color: #dbfedb; /* zielone tło */
+}
+
+/* In your CSS file */
+.time-picker-custom {
+  width: 100%; /* or any specific width */
+}
+
+/* If the library uses specific classes, directly target them */
+.react-time-picker {
+  width: 100%;
+}

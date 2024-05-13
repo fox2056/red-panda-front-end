@@ -1,0 +1,11 @@
+/* styles/PageHeader.css */
+/* do każdej strony nagłówek aktywowany jako np. <PageHeader title="Logowanie" /> w pierwszym <div>*/
+.page-header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc; /* Szara kreska na długości diva */
+}

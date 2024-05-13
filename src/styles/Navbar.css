@@ -1,0 +1,35 @@
+/* styles/Navbar.css */
+.navbar {
+    background-color: #eff6f4;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar .logo {
+    color: #416b1f;
+    font-size: 20px;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white; /* Zmiana koloru czcionki na biały */
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 2px solid transparent;
+    margin-left: 20px; /* Zwiększenie marginesu między przyciskami */
+    background-color: #416b1f;
+    border-radius: 5px; /* Dodanie zaokrąglonych rogów */
+}
+
+.navbar a:hover {
+    background-color: #eff6f4;
+    color: black; /* Zmiana koloru czcionki przy najechaniu */
+    border-color: #444;
+}
